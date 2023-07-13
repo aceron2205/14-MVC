@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registry</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <header>
+    <nav
+      class="navbar is-brown-background"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <a class="navbar-item has-text-white" href="/">Home</a>
+      <a class="navbar-item has-text-white" href="/dashboard">Dashboard</a>
+      <a class="navbar-item has-text-white" href="/login">Login</a>
+      <a class="navbar-item has-text-white" href="*">Logout</a>
+    </nav>
+    <div class="logo-container is-brown-background">
+      <span class="tag is-success py-3 mg-large" id="span_title"><b>The Tech
+          Blog</b></span>
+    </div>
+  </header>
+
+  <body>
+    <main class="container container-fluid mt-5">
+      <!-- Render the contents of the sub layout here -->
+      {{{body}}}
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

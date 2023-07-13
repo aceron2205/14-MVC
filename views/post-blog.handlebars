@@ -1,0 +1,41 @@
+<nav class="panel is-justify-content-space-around p-6">
+  <p class="panel-heading is-brown-background">
+    Create New Post
+  </p>
+
+  <form>
+    <div class="field">
+      <label class="label">Title</label>
+      <div class="control">
+        <input
+          class="input"
+          id="blog-title"
+          value="title"
+          type="text"
+          placeholder="Text input"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Content</label>
+      <div class="control">
+        <textarea
+          class="textarea"
+          value="content"
+          placeholder="Text area"
+          id="blog-content"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <p class="control">
+        <button class="button is-success submit">
+          Create
+        </button>
+      </p>
+    </div>
+  </form>
+</nav>
+<script src="./blogPost.js"></script>
