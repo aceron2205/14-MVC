@@ -30,4 +30,5 @@ router.get("/signup", async (req, res) => {
 router.get("/post-blog", async (req, res) => {
   res.render("post-blog");
 });
+
 module.exports = router;
