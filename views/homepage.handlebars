@@ -1,15 +1,13 @@
 <div class="panel-block holi"></div>
 <nav class="panel is-justify-content-space-around p-6">
-  {{#each blogs}}
-    <p class="panel-heading is-brown-background">
-      {{title}}
-    </p>
-    <div class="content">
-      <h4>
-        <p class="p-1">{{content}}</p>
-      </h4>
-
-      {{! add user name to panel WHY ISNT IT SHOWING UP}}
-    </div>
-  {{/each}}
+    {{#each posts}}
+        <p class="panel-heading is-brown-background">
+            <a href="/post/{{id}}">{{title}}</a>
+        </p>
+        <div class="content">
+            <h4>
+                <p class="p-1">{{content}}</p>
+            </h4>
+        </div>
+    {{/each}}
 </nav>

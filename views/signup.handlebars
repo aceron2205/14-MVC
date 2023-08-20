@@ -1,10 +1,18 @@
-<nav class="panel is-justify-content-space-around p-6">
-    <p class="panel-heading is-brown-background">
-        Sign up
-    </p>
+<p class="panel-heading is-brown-background">
+    Sign up
+</p>
+<form action="" class="signup-form">
     <div class="field">
         <p class="control has-icons-left has-icons-right py-3">
-            <input class="input" type="email" placeholder="Email">
+            <input id="username-input" class="input" type="text" placeholder="Username">
+            <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control has-icons-left has-icons-right py-3">
+            <input id="email-input" class="input" type="email" placeholder="Email">
             <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
             </span>
@@ -15,7 +23,7 @@
     </div>
     <div class="field">
         <p class="control has-icons-left">
-            <input class="input" type="password" placeholder="Password">
+            <input id="password-input" class="input" type="password" placeholder="Password">
             <span class="icon is-small is-left">
                 <i class="fas fa-lock"></i>
             </span>
@@ -29,4 +37,5 @@
             </button>
         </p>
     </div>
-</nav>
+</form>
+<script src="./js/login.js"></script>

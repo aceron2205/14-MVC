@@ -1,34 +1,33 @@
-<nav class="panel is-justify-content-space-around p-6">
-    <p class="panel-heading is-brown-background">
-        Login
-    </p>
-    <form
-<div class="field">
-  <p class="control has-icons-left has-icons-right">
-    <input class="input email" type="email" placeholder="Email">
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </p>
-</div>
-<div class="field">
-  <p class="control has-icons-left">
-    <input class="input password" type="password" placeholder="Password">
-    <span class="icon is-small is-left">
-      <i class="fas fa-lock"></i>
-    </span>
-  </p>
-</div>
-<div class="field">
-    <a href="/signup">Sign up instead</a>
-  <p class="control">
-    <button class="button is-success login-class">
-      Login
-    </button>
-  </p>
-</div>
-</nav>
-<scrpt src="./js/login.js"></scrpt>
+<p class="panel-heading is-brown-background">
+    Login
+</p>
+<form class="login-form">
+    <div class="field">
+        <p class="control has-icons-left has-icons-right">
+            <input id="email-input" class="input email" type="email" placeholder="Email">
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control has-icons-left">
+            <input id="password-input" class="input password" type="password" placeholder="Password">
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <a href="/signup">Sign up instead</a>
+        <p class="control">
+            <button type="submit" class="button is-success login-class">
+                Login
+            </button>
+        </p>
+    </div>
+</form>
+<script src="./js/login.js"></script>

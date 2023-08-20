@@ -1,22 +1,27 @@
 <div class="panel-block"></div>
 <nav class="panel is-justify-content-space-around p-6">
-    {{#each blogs}}
-    <p class="panel-heading is-brown-background">
-        Blog Title {{title}}
-    </p>
-    <div class="content">
-        <h4>
-            <p class="p-1">Blog content {{content}}</p>
-            {{!-- blogs need to redirect blog id, to update or delete from users account--}}
-        </h4>
-    </div>
+    {{#each posts}}
+        <p class="panel-heading is-brown-background">
+            {{title}}
+        </p>
+        <div class="content">
+            <h4>
+                <p class="p-1">
+                    {{content}}
+                </p>
+                {{!-- blogs need to redirect blog id, to update or delete from users account--}}
+            </h4>
+        </div>
     {{/each}}
     <nav class="panel">
     </nav>
     <div class="field">
         <p class="control">
-            <a href="/post-blog"><button class="button is-success">
-                + New Post
-            </button></a>
+            <a href="/post-blog">
+                <button class="button is-success">
+                    + New Post
+                </button>
+            </a>
         </p>
     </div>
+</nav>
